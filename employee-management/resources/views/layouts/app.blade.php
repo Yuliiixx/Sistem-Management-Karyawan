@@ -32,6 +32,12 @@
                             Kehadiran
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('salaries.index') ? 'active' : '' }}" aria-current="page" href="{{ route('salaries.index') }}">
+                            <i class="fas fa-list"></i>
+                            Salary
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
