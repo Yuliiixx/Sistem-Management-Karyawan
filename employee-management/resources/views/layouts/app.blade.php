@@ -26,7 +26,12 @@
                             Karyawan
                         </a>
                     </li>
-                   
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('attendances.index') ? 'active' : '' }}" aria-current="page" href="{{ route('attendances.index') }}">
+                            <i class="fas fa-list"></i>
+                            Kehadiran
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
