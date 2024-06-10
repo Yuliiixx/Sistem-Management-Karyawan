@@ -22,31 +22,31 @@
                     
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('employees.index') ? 'active' : '' }}" aria-current="page" href="{{ route('employees.index') }}">
-                            <i class="fas fa-list"></i>
+                            <i class="fas fa-user"></i>
                             Karyawan
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('attendances.index') ? 'active' : '' }}" aria-current="page" href="{{ route('attendances.index') }}">
-                            <i class="fas fa-list"></i>
+                            <i class="far fa-calendar-alt"></i>
                             Kehadiran
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('salaries.index') ? 'active' : '' }}" aria-current="page" href="{{ route('salaries.index') }}">
-                            <i class="fas fa-list"></i>
+                            <i class="fas fa-money-bill"></i>
                             Salary
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('classes.index') ? 'active' : '' }}" aria-current="page" href="{{ route('classes.index') }}">
-                            <i class="fas fa-list"></i>
+                            <i class="fas fa-chalkboard"></i>
                             Kelas
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('packages.index') ? 'active' : '' }}" aria-current="page" href="{{ route('packages.index') }}">
-                            <i class="fas fa-list"></i>
+                            <i class="fas fa-box"></i>
                             Paket Anak
                         </a>
                     </li>
