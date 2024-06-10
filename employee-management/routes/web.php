@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\SalaryController;
+use App\Http\Controllers\ClassController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,4 @@ Route::get('/', function () {
 Route::resource('employees', EmployeeController::class);
 Route::resource('attendances', AttendanceController::class);
 Route::resource('salaries', SalaryController::class);
+Route::resource('classes', ClassController::class);

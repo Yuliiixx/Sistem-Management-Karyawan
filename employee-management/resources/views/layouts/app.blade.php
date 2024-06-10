@@ -38,6 +38,12 @@
                             Salary
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('classes.index') ? 'active' : '' }}" aria-current="page" href="{{ route('classes.index') }}">
+                            <i class="fas fa-list"></i>
+                            Kelas
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
