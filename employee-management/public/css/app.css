@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* Warna latar belakang yang lebih cerah */
+}
+
+.container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    background: linear-gradient(45deg, #004085, #0056b3); /* Gradient warna biru lebih pekat */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+}
+
+.nav-link {
+    color: #fff; /* Warna teks putih */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: rgba(255, 255, 255, 0.2); /* Efek hover dengan transparansi */
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #004085; /* Warna latar belakang biru lebih pekat untuk dropdown */
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    color: #fff; /* Warna teks putih */
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #002752; /* Biru lebih pekat untuk hover */
+    color: #fff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem;
+    transition: all 0.3s;
+}
+
+.content:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem 0; /* Footer lebih kecil */
+    background: #004085;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #002752;
+}
+
+.btn-blue {
+    background-color: #004085;
+    color: #fff; /* Teks putih */
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #e9ecef;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.blue-link {
+    color: #002752;
+}
