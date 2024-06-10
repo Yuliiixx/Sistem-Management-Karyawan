@@ -44,6 +44,12 @@
                             Kelas
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('packages.index') ? 'active' : '' }}" aria-current="page" href="{{ route('packages.index') }}">
+                            <i class="fas fa-list"></i>
+                            Paket Anak
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

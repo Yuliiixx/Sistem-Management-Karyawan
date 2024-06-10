@@ -5,6 +5,8 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\SalaryController;
 use App\Http\Controllers\ClassController;
+use App\Http\Controllers\PackageController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +22,4 @@ Route::resource('employees', EmployeeController::class);
 Route::resource('attendances', AttendanceController::class);
 Route::resource('salaries', SalaryController::class);
 Route::resource('classes', ClassController::class);
+Route::resource('packages', PackageController::class);
