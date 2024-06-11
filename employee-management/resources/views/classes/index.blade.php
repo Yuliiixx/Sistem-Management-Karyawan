@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Class Management</h2>
+                <h2>Kelas</h2>
                 <a class="btn btn-success mb-3" href="{{ route('classes.create') }}">Create New Class</a>
                 @if ($message = Session::get('success'))
                     <div class="alert alert-success">
@@ -15,7 +15,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Class Name</th>
+                            <th>Nama Kelas</th>
                             <th>Schedule</th>
                             <th width="280px">Action</th>
                         </tr>

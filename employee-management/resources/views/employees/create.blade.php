@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Add New Employee</h2>
+                <h2>Add New Karyawan</h2>
                 <a class="btn btn-primary" href="{{ route('employees.index') }}"> Back</a>
             </div>
         </div>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Name:</strong>
+                        <strong>Nama:</strong>
                         <input type="text" name="name" class="form-control" placeholder="Name">
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Position:</strong>
+                        <strong>Posisi:</strong>
                         <input type="text" name="position" class="form-control" placeholder="Position">
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Date Joined:</strong>
+                        <strong>Tanggal Bergabung:</strong>
                         <input type="date" name="date_joined" class="form-control" placeholder="Date Joined">
                     </div>
                 </div>

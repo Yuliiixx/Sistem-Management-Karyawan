@@ -4,14 +4,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Create New Attendance</h2>
+                <h2>Create New Kehadiran</h2>
             </div>
         </div>
         <div class="row mt-4">
             <form action="{{ route('attendances.store') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="employee_id">Employee</label>
+                    <label for="employee_id">Nama</label>
                     <select name="employee_id" class="form-control">
                         @foreach ($employees as $employee)
                             <option value="{{ $employee->employee_id }}">{{ $employee->name }}</option>
@@ -19,7 +19,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="date">Date</label>
+                    <label for="date">Tanggal</label>
                     <input type="date" name="date" class="form-control" required>
                 </div>
                 <div class="form-group">

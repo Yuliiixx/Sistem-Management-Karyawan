@@ -16,10 +16,9 @@
         <nav class="col-md-3 col-lg-2 d-md-block sidebar">
             <div class="position-sticky">
                 <a class="navbar-brand d-flex align-items-center justify-content-center py-3" href="{{ url('/') }}">
-       
+                    <!-- Anda dapat menambahkan logo di sini -->
                 </a>
                 <ul class="nav flex-column">
-                    
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('employees.index') ? 'active' : '' }}" aria-current="page" href="{{ route('employees.index') }}">
                             <i class="fas fa-user"></i>
@@ -28,26 +27,50 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('attendances.index') ? 'active' : '' }}" aria-current="page" href="{{ route('attendances.index') }}">
-                            <i class="far fa-calendar-alt"></i>
+                            <i class="fas fa-calendar-check"></i>
                             Kehadiran
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('salaries.index') ? 'active' : '' }}" aria-current="page" href="{{ route('salaries.index') }}">
-                            <i class="fas fa-money-bill"></i>
-                            Salary
+                            <i class="fas fa-money-bill-wave"></i>
+                            Gaji
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('classes.index') ? 'active' : '' }}" aria-current="page" href="{{ route('classes.index') }}">
-                            <i class="fas fa-chalkboard"></i>
+                            <i class="fas fa-chalkboard-teacher"></i>
                             Kelas
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('packages.index') ? 'active' : '' }}" aria-current="page" href="{{ route('packages.index') }}">
-                            <i class="fas fa-box"></i>
+                            <i class="fas fa-box-open"></i>
                             Paket Anak
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('children.index') ? 'active' : '' }}" aria-current="page" href="{{ route('children.index') }}">
+                            <i class="fas fa-child"></i>
+                            Anak
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('child_classes.index') ? 'active' : '' }}" aria-current="page" href="{{ route('child_classes.index') }}">
+                            <i class="fas fa-school"></i>
+                            Kelas Anak
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('reports.index') ? 'active' : '' }}" aria-current="page" href="{{ route('reports.index') }}">
+                            <i class="fas fa-file-alt"></i>
+                            Laporan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('assessments.index') ? 'active' : '' }}" aria-current="page" href="{{ route('assessments.index') }}">
+                            <i class="fas fa-clipboard-check"></i>
+                            Assessment
                         </a>
                     </li>
                 </ul>

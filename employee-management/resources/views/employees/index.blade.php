@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Employee Management</h2>
-                <a class="btn btn-success" href="{{ route('employees.create') }}">Create New Employee</a>
+                <h2>Management Karyawan</h2>
+                <a class="btn btn-success" href="{{ route('employees.create') }}">Create New Karyawan</a>
             </div>
         </div>
         <div class="row">
@@ -17,11 +17,11 @@
             <table class="table table-bordered">
                 <tr>
                     <th>No</th>
-                    <th>Name</th>
+                    <th>Nama</th>
                     <th>Email</th>
-                    <th>Position</th>
+                    <th>Posisi</th>
                     <th>Basic Salary</th>
-                    <th>Date Joined</th>
+                    <th>Tanggal Bergabung</th>
                     <th width="180px">Action</th> <!-- Lebar kolom dikurangi karena ikon lebih kecil -->
                 </tr>
                 @php $i = 0; @endphp

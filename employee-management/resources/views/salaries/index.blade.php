@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2>Salary Management</h2>
@@ -15,12 +15,12 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Employee</th>
-                            <th>Month</th>
-                            <th>Year</th>
-                            <th>Total Hours</th>
+                            <th>Nama</th>
+                            <!-- <th>Month</th>
+                            <th>Year</th> -->
+                            <th>Total Jam</th>
                             <th>Bonus</th>
-                            <th>Deductions</th>
+                            <th>Potongan</th>
                             <th>Total Salary</th>
                             <th width="160px">Action</th>
                         </tr>
@@ -31,8 +31,8 @@
                             <tr>
                                 <td>{{ ++$i }}</td>
                                 <td>{{ $salary->employee->name }}</td>
-                                <td>{{ $salary->month }}</td>
-                                <td>{{ $salary->year }}</td>
+                                <!-- <td>{{ $salary->month }}</td>
+                                <td>{{ $salary->year }}</td> -->
                                 <td>{{ $salary->total_hours }}</td>
                                 <td>{{ $salary->bonus }}</td>
                                 <td>{{ $salary->deductions }}</td>

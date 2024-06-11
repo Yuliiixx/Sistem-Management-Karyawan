@@ -15,9 +15,9 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Package Name</th>
+                            <th>Nama Paket</th>
                             <th>Description</th>
-                            <th>Price</th>
+                            <th>Harga per jam</th>
                             <th width="280px">Action</th>
                         </tr>
                     </thead>

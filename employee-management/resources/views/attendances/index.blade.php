@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Attendance Management</h2>
-                <a class="btn btn-success" href="{{ route('attendances.create') }}">Create New Attendance</a>
+                <h2>Kehadiran</h2>
+                <a class="btn btn-success" href="{{ route('attendances.create') }}">Create New Kehadiran</a>
             </div>
         </div>
         <div class="row mt-4">
@@ -17,8 +17,8 @@
             <table class="table table-bordered">
                 <tr>
                     <th>No</th>
-                    <th>Employee</th>
-                    <th>Date</th>
+                    <th>Nama</th>
+                    <th>Tanggal</th>
                     <th>Status</th>
                     <th width="150px">Action</th>
                 </tr>
